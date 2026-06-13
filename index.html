@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laser Frame Studio | Motion & Animation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800&family=Chakra+Petch:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="laserframeLogo.png">
+</head>
+
+<body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <canvas id="bg-canvas"></canvas>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="laserframeLogo.png" alt="Laser Frame Studio" class="logo-img">
+        </div>
+        <div class="menu-toggle">
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#work">Work</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">Studio</a></li>
+            <li><a href="#contact" class="btn-primary">Start Project</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="line">We Don't Just</span>
+                <span class="line highlight">Animate Pixels.</span>
+                <span class="line">We Ignite</span>
+                <span class="line">Imagination.</span>
+            </h1>
+            <p class="hero-subtitle">A digital art collective crafting 2D motion graphics that defy gravity and logic.
+            </p>
+            <div class="hero-cta">
+                <a href="#work" class="btn-glow">View Showreel</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to Explore</span>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </header>
+
+    <section id="work" class="work-section">
+        <div class="section-header">
+            <h2>Selected Works</h2>
+            <div class="line-divider"></div>
+        </div>
+        <div class="gallery">
+            <div class="project-card" data-speed="0.5">
+                <div class="card-image">
+                    <div class="animation-container">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#ff00cc;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#333399;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="100" cy="100" r="80" fill="url(#grad1)" opacity="0.2" />
+                            <path d="M50 150 Q100 50 150 150" stroke="#ff00cc" stroke-width="4" fill="none"
+                                stroke-linecap="round" class="wave-path" />
+                            <circle cx="100" cy="150" r="10" fill="#fff" class="wave-ball" />
+                            <rect x="80" y="120" width="40" height="10" rx="5" fill="#fff" opacity="0.5"
+                                class="wave-rect" />
+                        </svg>
+                    </div>
+                    <div class="overlay">
+                        <h3>Neon Dreams</h3>
+                        <p>Brand Identity</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-speed="1.2">
+                <div class="card-image">
+                    <div class="animation-container">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#00ffcc;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#0066ff;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect x="60" y="60" width="80" height="80" rx="10" fill="url(#grad2)" opacity="0.2" />
+                            <circle cx="100" cy="100" r="20" fill="#00ffcc" class="cyber-core" />
+                            <circle cx="100" cy="100" r="30" stroke="#00ffcc" stroke-width="2" fill="none"
+                                class="cyber-ring" />
+                            <circle cx="100" cy="100" r="40" stroke="#0066ff" stroke-width="1" fill="none"
+                                class="cyber-ring-slow" />
+                            <path d="M100 40 L100 20" stroke="#fff" stroke-width="2" class="cyber-line" />
+                            <path d="M100 160 L100 180" stroke="#fff" stroke-width="2" class="cyber-line" />
+                        </svg>
+                    </div>
+                    <div class="overlay">
+                        <h3>Cyber Flow</h3>
+                        <p>Explainer Video</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-speed="0.8">
+                <div class="card-image">
+                    <div class="animation-container">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#ff9900;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#ff0000;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <rect x="50" y="50" width="100" height="100" rx="15" fill="url(#grad3)" opacity="0.2" />
+                            <path d="M60 140 L100 100 L140 140" stroke="#ff9900" stroke-width="4" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round" class="urban-shape" />
+                            <circle cx="100" cy="100" r="15" fill="#ff0000" class="urban-dot" />
+                            <rect x="85" y="145" width="30" height="5" rx="2" fill="#fff" opacity="0.6"
+                                class="urban-shadow" />
+                        </svg>
+                    </div>
+                    <div class="overlay">
+                        <h3>Urban Pulse</h3>
+                        <p>Commercial</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-speed="1.5">
+                <div class="card-image">
+                    <div class="animation-container">
+                        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#9900ff;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#00ccff;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="100" cy="100" r="70" fill="url(#grad4)" opacity="0.15" />
+                            <path d="M100 30 L130 90 L70 90 Z" fill="#9900ff" class="void-triangle" />
+                            <circle cx="100" cy="100" r="10" fill="#fff" class="void-star" />
+                            <circle cx="100" cy="100" r="20" stroke="#00ccff" stroke-width="2" fill="none"
+                                class="void-orbit" />
+                            <circle cx="100" cy="100" r="30" stroke="#9900ff" stroke-width="1" fill="none"
+                                class="void-orbit-slow" />
+                        </svg>
+                    </div>
+                    <div class="overlay">
+                        <h3>Void Walker</h3>
+                        <p>Short Film</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <div class="glass-panel">
+            <h2>Our Craft</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>01. 2D Animation</h3>
+                    <p>Fluid, character-driven storytelling that breathes life into static concepts.</p>
+                </div>
+                <div class="service-item">
+                    <h3>02. Motion Graphics</h3>
+                    <p>High-impact visual effects and kinetic typography for digital platforms.</p>
+                </div>
+                <div class="service-item">
+                    <h3>03. Brand Identity</h3>
+                    <p>Creating visual languages that resonate and remain unforgettable.</p>
+                </div>
+                <div class="service-item">
+                    <h3>04. Interactive Web</h3>
+                    <p>Immersive web experiences blending code and art.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="about-content">
+            <h2>The Studio</h2>
+            <p class="big-text">We are a collective of artists, animators, and technologists. At Laser Frame, we believe
+                that every frame is a canvas and every movement is a story waiting to be told.</p>
+            <div class="stats">
+                <div class="stat">
+                    <span class="number" data-target="150">0</span>+
+                    <span class="label">Projects</span>
+                </div>
+                <div class="stat">
+                    <span class="number" data-target="12">0</span>
+                    <span class="label">Awards</span>
+                </div>
+                <div class="stat">
+                    <span class="number" data-target="8">0</span>
+                    <span class="label">Years</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <h2>Let's Create Magic</h2>
+            <p>Ready to bring your vision to life?</p>
+            <a href="mailto:hello@laserframe.com" class="email-link">hello@laserframe.com</a>
+            <div class="socials">
+                <a href="#">Instagram</a>
+                <a href="#">Behance</a>
+                <a href="#">LinkedIn</a>
+            </div>
+            <div class="copyright">
+                &copy; 2026 Laser Frame Studio. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
