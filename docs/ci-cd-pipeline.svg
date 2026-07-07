@@ -1,0 +1,66 @@
+<svg viewBox="0 0 1000 300" xmlns="http://www.w3.org/2000/svg" font-family="Verdana, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0b0f"/>
+      <stop offset="100%" stop-color="#141022"/>
+    </linearGradient>
+    <linearGradient id="nodeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c1830"/>
+      <stop offset="100%" stop-color="#100d1c"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#00ffe1"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1000" height="300" rx="20" fill="url(#bgGrad2)"/>
+
+  <text x="500" y="42" text-anchor="middle" fill="#ffffff" font-size="22" font-weight="bold">Continuous Deployment Pipeline</text>
+  <rect x="400" y="54" width="200" height="3" rx="2" fill="#ff00cc"/>
+
+  <!-- nodes -->
+  <g>
+    <rect x="30" y="110" width="150" height="90" rx="14" fill="url(#nodeGrad)" stroke="#ff00cc"/>
+    <text x="105" y="145" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="bold">Push to</text>
+    <text x="105" y="163" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="bold">main</text>
+    <text x="105" y="185" text-anchor="middle" fill="#9ca3af" font-size="10">git push origin main</text>
+  </g>
+
+  <line x1="180" y1="155" x2="230" y2="155" stroke="#00ffe1" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <g>
+    <rect x="230" y="110" width="150" height="90" rx="14" fill="url(#nodeGrad)" stroke="#00ffe1"/>
+    <text x="305" y="140" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="bold">Install and</text>
+    <text x="305" y="158" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="bold">Lint</text>
+    <text x="305" y="180" text-anchor="middle" fill="#9ca3af" font-size="10">npm ci · npm run lint</text>
+  </g>
+
+  <line x1="380" y1="155" x2="430" y2="155" stroke="#00ffe1" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <g>
+    <rect x="430" y="110" width="150" height="90" rx="14" fill="url(#nodeGrad)" stroke="#5b21ff"/>
+    <text x="505" y="140" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="bold">Type Check</text>
+    <text x="505" y="158" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="bold">and Build</text>
+    <text x="505" y="180" text-anchor="middle" fill="#9ca3af" font-size="10">tsc -b &amp;&amp; vite build</text>
+  </g>
+
+  <line x1="580" y1="155" x2="630" y2="155" stroke="#00ffe1" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <g>
+    <rect x="630" y="110" width="150" height="90" rx="14" fill="url(#nodeGrad)" stroke="#ff8a00"/>
+    <text x="705" y="140" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="bold">Upload Pages</text>
+    <text x="705" y="158" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="bold">Artifact</text>
+    <text x="705" y="180" text-anchor="middle" fill="#9ca3af" font-size="10">actions/upload-pages-artifact</text>
+  </g>
+
+  <line x1="780" y1="155" x2="830" y2="155" stroke="#00ffe1" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <g>
+    <rect x="830" y="110" width="140" height="90" rx="14" fill="url(#nodeGrad)" stroke="#00ffe1"/>
+    <text x="900" y="140" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="bold">Deploy to</text>
+    <text x="900" y="158" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="bold">GitHub Pages</text>
+    <text x="900" y="180" text-anchor="middle" fill="#9ca3af" font-size="10">actions/deploy-pages</text>
+  </g>
+
+  <text x="500" y="250" text-anchor="middle" fill="#9ca3af" font-size="12">Pull requests trigger the same lint and build checks without deploying, keeping main always releasable.</text>
+</svg>

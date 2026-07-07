@@ -1,0 +1,52 @@
+<svg viewBox="0 0 1000 460" xmlns="http://www.w3.org/2000/svg" font-family="Verdana, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0b0f"/>
+      <stop offset="100%" stop-color="#141022"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff00cc"/>
+      <stop offset="100%" stop-color="#00ffe1"/>
+    </linearGradient>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c1830"/>
+      <stop offset="100%" stop-color="#100d1c"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1000" height="460" rx="20" fill="url(#bgGrad)"/>
+
+  <text x="500" y="45" text-anchor="middle" fill="#ffffff" font-size="24" font-weight="bold" letter-spacing="1">Application Architecture</text>
+  <rect x="380" y="58" width="240" height="3" rx="2" fill="url(#accentGrad)"/>
+
+  <!-- App shell -->
+  <rect x="50" y="95" width="900" height="70" rx="16" fill="url(#boxGrad)" stroke="#ff00cc" stroke-opacity="0.5"/>
+  <text x="70" y="125" fill="#00ffe1" font-size="15" font-weight="bold">App.tsx</text>
+  <text x="70" y="148" fill="#9ca3af" font-size="12">Composition root. Wires hooks to layout components and renders the page.</text>
+
+  <!-- Hooks layer -->
+  <rect x="50" y="190" width="430" height="120" rx="16" fill="url(#boxGrad)" stroke="#00ffe1" stroke-opacity="0.5"/>
+  <text x="70" y="216" fill="#00ffe1" font-size="15" font-weight="bold">React Hooks</text>
+  <text x="70" y="238" fill="#d1d5db" font-size="12">useParticleBackground · useCustomCursor</text>
+  <text x="70" y="258" fill="#d1d5db" font-size="12">useScrollSpy · useCountUp · useInView</text>
+  <text x="70" y="285" fill="#9ca3af" font-size="11">Bridge lifecycle events to OOP services below</text>
+
+  <!-- Services layer -->
+  <rect x="520" y="190" width="430" height="120" rx="16" fill="url(#boxGrad)" stroke="#ff00cc" stroke-opacity="0.5"/>
+  <text x="540" y="216" fill="#ff00cc" font-size="15" font-weight="bold">OOP Service Classes</text>
+  <text x="540" y="238" fill="#d1d5db" font-size="12">ParticleEngine · CursorEngine</text>
+  <text x="540" y="258" fill="#d1d5db" font-size="12">ScrollSpyController · CounterAnimator</text>
+  <text x="540" y="278" fill="#d1d5db" font-size="12">ContactFormValidator</text>
+
+  <!-- Components layer -->
+  <rect x="50" y="345" width="900" height="90" rx="16" fill="url(#boxGrad)" stroke="#5b21ff" stroke-opacity="0.6"/>
+  <text x="70" y="371" fill="#a78bfa" font-size="15" font-weight="bold">Presentation Components</text>
+  <text x="70" y="393" fill="#d1d5db" font-size="12">Navbar · Hero · WorkSection · ServicesSection · AboutSection · ContactFooter</text>
+  <text x="70" y="413" fill="#9ca3af" font-size="11">Typed props sourced from the data layer (projects, services, stats, site config)</text>
+
+  <!-- Connectors -->
+  <line x1="500" y1="165" x2="265" y2="190" stroke="#00ffe1" stroke-width="2" opacity="0.7"/>
+  <line x1="500" y1="165" x2="735" y2="190" stroke="#ff00cc" stroke-width="2" opacity="0.7"/>
+  <line x1="265" y1="310" x2="500" y2="345" stroke="#00ffe1" stroke-width="2" opacity="0.7"/>
+  <line x1="735" y1="310" x2="500" y2="345" stroke="#ff00cc" stroke-width="2" opacity="0.7"/>
+</svg>
