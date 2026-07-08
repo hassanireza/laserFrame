@@ -6,8 +6,8 @@
 
 ### React + TypeScript Rebuild &middot; Object-Oriented Architecture &middot; Automated GitHub Pages Deployment
 
-[![Deploy to GitHub Pages](https://github.com/OWNER/REPO/actions/workflows/deploy.yml/badge.svg)](https://github.com/OWNER/REPO/actions/workflows/deploy.yml)
-[![CI Checks](https://github.com/OWNER/REPO/actions/workflows/ci.yml/badge.svg)](https://github.com/OWNER/REPO/actions/workflows/ci.yml)
+[![Deploy to GitHub Pages](https://github.com/hassanireza/laserFrame/actions/workflows/deploy.yml/badge.svg)](https://github.com/hassanireza/laserFrame/actions/workflows/deploy.yml)
+[![CI Checks](https://github.com/hassanireza/laserFrame/actions/workflows/ci.yml/badge.svg)](https://github.com/hassanireza/laserFrame/actions/workflows/ci.yml)
 ![React](https://img.shields.io/badge/React-19-149eca?logo=react&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178c6?logo=typescript&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-8-646cff?logo=vite&logoColor=white)
