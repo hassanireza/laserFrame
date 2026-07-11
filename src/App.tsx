@@ -1,4 +1,3 @@
-import { CustomCursor } from "./components/CustomCursor";
 import { ParticleBackground } from "./components/ParticleBackground";
 import { ScrollProgressBar } from "./components/ScrollProgressBar";
 import { BackToTop } from "./components/BackToTop";
@@ -18,7 +17,6 @@ function App() {
   return (
     <>
       <ScrollProgressBar progress={progress} />
-      <CustomCursor />
       <ParticleBackground />
 
       <Navbar activeSection={activeSection} />
