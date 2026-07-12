@@ -1,0 +1,83 @@
+<svg viewBox="0 0 1000 320" xmlns="http://www.w3.org/2000/svg" font-family="Verdana, Arial, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0b0f"/>
+      <stop offset="100%" stop-color="#141022"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff00cc"/>
+      <stop offset="100%" stop-color="#00ffe1"/>
+    </linearGradient>
+    <linearGradient id="card1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff00cc" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#1c1830" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="card2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00ffcc" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#1c1830" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="card3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff9900" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#1c1830" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="card4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9900ff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#1c1830" stop-opacity="0.4"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1000" height="320" rx="20" fill="url(#bg)"/>
+  <text x="500" y="42" text-anchor="middle" fill="#ffffff" font-size="22" font-weight="bold" letter-spacing="1">Studio Services</text>
+  <rect x="420" y="54" width="160" height="3" rx="2" fill="url(#accent)"/>
+
+  <!-- Card 1 -->
+  <g>
+    <rect x="40" y="90" width="215" height="190" rx="16" fill="url(#card1)" stroke="#ff00cc" stroke-opacity="0.5"/>
+    <text x="62" y="130" fill="#ff00cc" font-size="13" font-weight="bold">01</text>
+    <circle cx="147" cy="150" r="26" fill="none" stroke="#ff00cc" stroke-width="2"/>
+    <path d="M137 150 q10 -18 20 0 q-10 18 -20 0" fill="none" stroke="#ff00cc" stroke-width="2"/>
+    <text x="147" y="205" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">2D Animation</text>
+    <text x="147" y="228" text-anchor="middle" fill="#9ca3af" font-size="10">
+      <tspan x="147" dy="0">Character-driven</tspan>
+      <tspan x="147" dy="14">storytelling</tspan>
+    </text>
+  </g>
+
+  <!-- Card 2 -->
+  <g>
+    <rect x="270" y="90" width="215" height="190" rx="16" fill="url(#card2)" stroke="#00ffcc" stroke-opacity="0.5"/>
+    <text x="292" y="130" fill="#00ffcc" font-size="13" font-weight="bold">02</text>
+    <rect x="120" y="0" width="0" height="0"/>
+    <polygon points="377,128 400,150 377,172 354,150" fill="none" stroke="#00ffcc" stroke-width="2" transform="translate(0,0)"/>
+    <text x="377" y="205" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">Motion Graphics</text>
+    <text x="377" y="228" text-anchor="middle" fill="#9ca3af" font-size="10">
+      <tspan x="377" dy="0">Kinetic typography</tspan>
+      <tspan x="377" dy="14">&amp; VFX</tspan>
+    </text>
+  </g>
+
+  <!-- Card 3 -->
+  <g>
+    <rect x="500" y="90" width="215" height="190" rx="16" fill="url(#card3)" stroke="#ff9900" stroke-opacity="0.5"/>
+    <text x="522" y="130" fill="#ff9900" font-size="13" font-weight="bold">03</text>
+    <rect x="587" y="132" width="36" height="36" rx="6" fill="none" stroke="#ff9900" stroke-width="2"/>
+    <circle cx="605" cy="150" r="7" fill="none" stroke="#ff9900" stroke-width="2"/>
+    <text x="607" y="205" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">Brand Identity</text>
+    <text x="607" y="228" text-anchor="middle" fill="#9ca3af" font-size="10">
+      <tspan x="607" dy="0">Unforgettable</tspan>
+      <tspan x="607" dy="14">visual language</tspan>
+    </text>
+  </g>
+
+  <!-- Card 4 -->
+  <g>
+    <rect x="730" y="90" width="215" height="190" rx="16" fill="url(#card4)" stroke="#9900ff" stroke-opacity="0.5"/>
+    <text x="752" y="130" fill="#c084fc" font-size="13" font-weight="bold">04</text>
+    <path d="M815 135 l14 15 l-14 15 M851 135 l-14 15 l14 15" fill="none" stroke="#c084fc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="837" y="205" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="bold">Interactive Web</text>
+    <text x="837" y="228" text-anchor="middle" fill="#9ca3af" font-size="10">
+      <tspan x="837" dy="0">Immersive code</tspan>
+      <tspan x="837" dy="14">&amp; art experiences</tspan>
+    </text>
+  </g>
+</svg>
