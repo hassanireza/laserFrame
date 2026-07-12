@@ -1,7 +1,3 @@
-<div align="center">
-
-<img src="docs/banner.png" alt="Laser Frame Studio banner" width="100%" />
-
 # ⚡ LASER FRAME STUDIO
 
 ### A single-page digital showcase for a motion-design & animation studio
@@ -18,12 +14,12 @@
 
 ## 🎬 What This Site Is
 
-**Laser Frame Studio** is the public-facing website for a fictional digital art collective specializing in **2D animation, motion graphics, brand identity, and interactive web experiences**. It is not a tool, a platform, or a collaborative workspace — it is a **cinematic, single-serving marketing site**: one continuous scroll that introduces the studio, proves its craft through a project gallery, states its services, and converts an interested visitor into an email inquiry.
+**Laser Frame Studio** is the public-facing website for a fictional digital art collective specializing in **2D animation, motion graphics, brand identity, and interactive web experiences**. It is not a tool, a platform, or a collaborative workspace: it is a **cinematic, single-serving marketing site**: one continuous scroll that introduces the studio, proves its craft through a project gallery, states its services, and converts an interested visitor into an email inquiry.
 
 There are no accounts, no logins, no dashboards, and nothing to install for an end user. The entire "service" the site provides is **presentation and lead capture**.
 
 <div align="center">
-<img src="docs/hero-preview.png" alt="Hero section preview — recreated first-view screenshot of the site" width="90%" />
+<img src="docs/hero-preview.png" alt="Hero section preview: recreated first-view screenshot of the site" width="90%" />
 <br/>
 <sub><i>Recreated first-view (hero) of the live site, rendered from the project's own design tokens.</i></sub>
 </div>
@@ -32,7 +28,7 @@ There are no accounts, no logins, no dashboards, and nothing to install for an e
 
 ## 🧭 Visitor Journey
 
-The site is intentionally **linear and one-directional** — every section exists to move a visitor one step closer to sending a message. There is no shared state, no multi-user feature, and nothing to "collaborate" on.
+The site is intentionally **linear and one-directional**: every section exists to move a visitor one step closer to sending a message. There is no shared state, no multi-user feature, and nothing to "collaborate" on.
 
 <div align="center">
 <img src="docs/visitor-journey.svg" alt="Visitor journey diagram" width="95%" />
@@ -44,7 +40,7 @@ The site is intentionally **linear and one-directional** — every section exist
 | 🎞️ **Explore** | `Work` | Parallax-driven gallery of past projects, each with generative gradient artwork |
 | 🧩 **Evaluate** | `Services` | Four core offerings presented as an indexed capability list |
 | 📊 **Trust** | `Studio / About` | Studio narrative plus animated counters (projects, awards, years) |
-| ✉️ **Convert** | `Contact` | Validated form that opens a pre-filled `mailto:` draft — no backend, no data storage |
+| ✉️ **Convert** | `Contact` | Validated form that opens a pre-filled `mailto:` draft: no backend, no data storage |
 
 ---
 
@@ -61,7 +57,7 @@ The site is intentionally **linear and one-directional** — every section exist
 | 03 | **Brand Identity** | Visual languages designed to resonate and remain unforgettable |
 | 04 | **Interactive Web** | Immersive web experiences that blend code and art |
 
-These four cards are the entire commercial offering communicated on the page — the site's job is to make each one feel tangible before the visitor ever speaks to a human.
+These four cards are the entire commercial offering communicated on the page: the site's job is to make each one feel tangible before the visitor ever speaks to a human.
 
 ---
 
@@ -90,11 +86,11 @@ The front end is intentionally engineered like a small application rather than a
 
 **Layer breakdown**
 
-- **`App.tsx`** — composition root; assembles the page from layout components
-- **Hooks** (`useParticleBackground`, `useCustomCursor`, `useScrollSpy`, `useCountUp`, `useInView`) — bridge React lifecycle events to the service layer
-- **Services** (`ParticleEngine`, `CursorEngine`, `ScrollSpyController`, `CounterAnimator`, `ContactFormValidator`) — framework-agnostic classes that own all animation/validation logic
-- **Components** (`Navbar`, `Hero`, `WorkSection`, `ServicesSection`, `AboutSection`, `ContactFooter`, …) — typed, presentation-only, driven by the data layer
-- **Data** (`site.ts`, `projects.ts`, `services.ts`) — all copy, project metadata, and studio config in one typed source of truth
+- **`App.tsx`**: composition root; assembles the page from layout components
+- **Hooks** (`useParticleBackground`, `useCustomCursor`, `useScrollSpy`, `useCountUp`, `useInView`): bridge React lifecycle events to the service layer
+- **Services** (`ParticleEngine`, `CursorEngine`, `ScrollSpyController`, `CounterAnimator`, `ContactFormValidator`): framework-agnostic classes that own all animation/validation logic
+- **Components** (`Navbar`, `Hero`, `WorkSection`, `ServicesSection`, `AboutSection`, `ContactFooter`, …): typed, presentation-only, driven by the data layer
+- **Data** (`site.ts`, `projects.ts`, `services.ts`): all copy, project metadata, and studio config in one typed source of truth
 
 ---
 
@@ -122,7 +118,7 @@ The site ships automatically: every pull request is linted and type-checked, and
 
 </div>
 
-No backend, no database, and no third-party analytics are part of the served experience — everything a visitor interacts with runs client-side in the browser, and the contact "submission" hands off to the visitor's own email client rather than storing anything server-side.
+No backend, no database, and no third-party analytics are part of the served experience: everything a visitor interacts with runs client-side in the browser, and the contact "submission" hands off to the visitor's own email client rather than storing anything server-side.
 
 ---
 
@@ -133,10 +129,10 @@ No backend, no database, and no third-party analytics are part of the served exp
 | Token | Value | Swatch |
 |---|---|---|
 | Background | `#050505` | ![#050505](https://placehold.co/60x20/050505/050505.png) |
-| Accent — Magenta | `#ff00cc` | ![#ff00cc](https://placehold.co/60x20/ff00cc/ff00cc.png) |
-| Accent — Violet | `#5b21ff` | ![#5b21ff](https://placehold.co/60x20/5b21ff/5b21ff.png) |
-| Accent — Cyan | `#00ffe1` | ![#00ffe1](https://placehold.co/60x20/00ffe1/00ffe1.png) |
-| Accent — Amber | `#ff8a00` | ![#ff8a00](https://placehold.co/60x20/ff8a00/ff8a00.png) |
+| Accent: Magenta | `#ff00cc` | ![#ff00cc](https://placehold.co/60x20/ff00cc/ff00cc.png) |
+| Accent: Violet | `#5b21ff` | ![#5b21ff](https://placehold.co/60x20/5b21ff/5b21ff.png) |
+| Accent: Cyan | `#00ffe1` | ![#00ffe1](https://placehold.co/60x20/00ffe1/00ffe1.png) |
+| Accent: Amber | `#ff8a00` | ![#ff8a00](https://placehold.co/60x20/ff8a00/ff8a00.png) |
 
 Display type is set in **Orbitron** for headings and **Inter** for body copy, reinforcing a high-contrast, neon-on-black studio identity throughout every section.
 
@@ -146,7 +142,7 @@ Display type is set in **Orbitron** for headings and **Inter** for body copy, re
 
 <div align="center">
 
-**Laser Frame Studio** — *We do not just animate pixels. We ignite imagination.*
+**Laser Frame Studio**: *We do not just animate pixels. We ignite imagination.*
 
 <sub>© Laser Frame Studio · All rights reserved · This repository is proprietary and is not licensed for reuse.</sub>
 
